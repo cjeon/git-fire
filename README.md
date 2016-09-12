@@ -1,6 +1,6 @@
-# `git-jijin` :boom:
+﻿# `git-jijin` :boom:
 
-### ![Inspiration](https://i.imgur.com/3POtveC.jpg)
+### ![Inspiration](https://github.com/todoaskit/git-jijin/blob/master/pic/git-jijin.jpg)
 
 `git-jijin`은 `git-fire`에서 포크한 프로젝트로, `fire`이 `jijin`으로 바뀌고 일부 명령어가 한국어로 번역된 것을 제외하면 완전히 똑같습니다.
 
