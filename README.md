@@ -4,9 +4,8 @@
 
 `git-jijin`은 `git-fire`에서 포크한 프로젝트로, `fire`이 `jijin`으로 바뀌고 일부 명령어가 한국어로 번역된 것을 제외하면 완전히 똑같습니다.
 
-적용법:
-* `git config --global alias.out jijin`
-* `git config --global alias.going jijin`
+적용법:  
+git-jijin을 `$PATH`에 실행가능한 상태 (`chmod +x git-fire`)로 두시면 됩니다. (`$PATH`를 확인하시려면 terminal에서 `echo $PATH`를 실행하세요.)
 
 사용법:  
 `git-jijin <message>`  
