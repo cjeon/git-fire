@@ -1,6 +1,21 @@
-# `git-fire` :fire:
+# `git-jijin` :boom:
 
 ### ![Inspiration](https://i.imgur.com/3POtveC.jpg)
+
+`git-jijin`은 `git-fire`에서 포크한 프로젝트로, `fire`이 `jijin`으로 바뀌고 일부 명령어가 한국어로 번역된 것을 제외하면 완전히 똑같습니다.
+
+적용법:
+* `git config --global alias.out jijin`
+* `git config --global alias.going jijin`
+
+사용법:  
+`git-jijin <message>`  
+메시지는 옵션입니다. 입력되지 않으면 `"지진이다! Branch $(current_branch)."`가 자동으로 사용됩니다.
+
+아래는 `git-fire`의 `readme.md`입니다.
+
+________________
+
 
 `git-fire` is a Git plugin that **helps in the event of an emergency** by switching to the repository's root directory, adding all current files, committing, and pushing commits and all stashes to a new branch (to prevent merge conflicts).
 

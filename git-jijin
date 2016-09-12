@@ -4,7 +4,7 @@
 VERSION="0.0.1"
 
 version() {
-	printf "git-fire version %s\n" "$VERSION"
+	printf "git-jijin version %s\n" "$VERSION"
 
 	git --version
 }
@@ -23,10 +23,10 @@ user_email() {
 }
 
 new_branch() {
-	echo "fire-${1:-$(current_branch)}-$(user_email)-$(current_epoch)"
+	echo "jijin-${1:-$(current_branch)}-$(user_email)-$(current_epoch)"
 }
 
-fire() {
+jijin() {
 	initial_branch="$(current_branch)"
 
 	git checkout -b "$(new_branch)"
@@ -37,7 +37,7 @@ fire() {
 	git add -A
 
 	if [ -z "$1" ]; then
-		message="Fire! Branch $(current_branch)."
+		message="지진이다! Branch $(current_branch)."
 	else
 		message="$*"
 	fi
@@ -52,22 +52,22 @@ fire() {
 		git push origin "$sha":refs/heads/"$(current_branch $initial_branch)"-stash-"$sha"
 	done
 
-	printf "\n\nLeave building!\n"
+	printf "\n\n침착하게 계단으로 대피하세요!\n"
 }
 
 display_help() {
 	cat <<-EOF
 
   usage:
-    git fire [options] [COMMAND] [args]
+    git jijin [options] [COMMAND] [args]
 
   commands:
-    git fire                        Add, commit, and push to remote in case of a fire
-    git fire <message>              Execute git fire with <message> for commit message
+    git jijin                        Add, commit, and push to remote in case of a jijin
+    git jijin <message>              Execute git jijin with <message> for commit message
 
 
   options:
-    -V, --version                   Output current version of git-fire
+    -V, --version                   Output current version of git-jijin
     -h, --help                      Display this help information
 
 EOF
@@ -80,4 +80,4 @@ case $1 in
 	-h|--help) display_help; exit 0 ;;
 esac
 
-fire "$@"
+jijin "$@"
